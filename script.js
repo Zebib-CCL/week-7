@@ -56,8 +56,12 @@ button.addEventListener("click", function() {
           list.appendChild(listItem);
       });
 
-      // Append the list to the inventories div
+      // Append the list to the image to the inventories div
+      inventoriesDiv.innerHTML = '';
       inventoriesDiv.appendChild(list);
+      inventoriesDiv.innerHTML += '<img src="cosmetics.png" alt="cosmetics">'
+      
       isListVisible = true;
   }
 });
+
